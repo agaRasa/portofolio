@@ -10,10 +10,16 @@ a{
     text-decoration: none;
     color: black
 }
+#about,#projects,#contact{
+    background-color: #ebebeb;
+    width: 100%;
+    padding: 2rem 5rem;
+}
 .header {
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
     z-index: 1;
+    background-color: white;
 }
 .header-content {
     display: flex;
@@ -50,11 +56,51 @@ li{
     margin-top: 10px;
 }
 .hero-img{
-    padding: 5rem;
-    padding-right: 2rem
+    padding: 6.5rem;
+    padding-right: 2rem;
 }
 .hero-img img{
-    height: 80vh;
+    height: 75vh;
     border-radius:50%;
     background-color: #6288c4;
+}
+.about-intro h1{
+    padding-bottom: 1.5rem;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.about-intro p {
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.about-container {
+    display:flex;
+    width: 100%;
+    background-color: white;
+    background: rgba(250, 247, 247, 0.7);
+    border-radius: 10px;
+    padding: 2rem 5rem;
+}
+.about-me{
+    width: 50%;
+}
+.about-skill{
+    width: 50%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background: #1c1c1c;
+    color: white;
+    height: 20vh;
+    text-align: center;
+}
+footer .footer-icon{
+    margin-right: 1rem;
+}
+.icon {
+    width:1.5rem;   
 }
