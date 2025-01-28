@@ -10,7 +10,10 @@ a{
     text-decoration: none;
     color: black
 }
-#about,#projects,#contact{
+section{
+    scroll-margin-top: 11.5vh;
+}
+#about,#project,#contact{
     background-color: #ebebeb;
     width: 100%;
     padding: 2rem 5rem;
@@ -18,14 +21,15 @@ a{
 .header {
     position: fixed;
     width: 100%;
-    z-index: 1;
+    height: 11.5vh;
+    z-index: 1000;
     background-color: white;
 }
 .header-content {
     display: flex;
     align-item: center;
     justify-content: space-between;
-    padding: 2rem 5rem;
+    padding: 1.5rem 5rem;
 }
 li{
     display: inline;
@@ -34,7 +38,7 @@ li{
 }
 .hero-container {
     background-color: #e3e3e3;
-    height: 100vh;
+    min-height: 100vh;
     padding: 5rem;
     padding-top: 1rem;
     display: flex;
@@ -64,32 +68,78 @@ li{
     border-radius:50%;
     background-color: #6288c4;
 }
-.about-intro h1{
+.about-container{
+    min-height: 85vh;
+}
+.title{
     padding-bottom: 1.5rem;
     letter-spacing: 3px;
     text-align: center;
     text-transform: uppercase;
 }
-.about-intro p {
+.description {
     letter-spacing: 2px;
     text-align: center;
     margin-bottom: 1rem;
+    padding-top: 1rem;
 }
-.about-container {
+.about-explanation {
     display:flex;
     width: 100%;
-    background-color: white;
     background: rgba(250, 247, 247, 0.7);
     border-radius: 10px;
     padding: 2rem 5rem;
 }
 .about-me{
     width: 50%;
+    padding: 1rem;
+    letter-spacing: 1px;
 }
 .about-skill{
     width: 50%;
+    padding-left: 1rem;
 }
-
+.skill{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.skill-set{
+    background-color:#aba9a6;
+    opacity: 0.5;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.project-container{
+    min-height: 85vh;
+}
+.wrapper{
+    position: relative;
+    border-radius: 20px;
+    padding: 2rem 5rem;
+    width: 100%;
+    gap: 30px 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: rgba(250, 247, 247, 0.7);
+}
+.card{
+    color: #111;
+    width: 49%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.card img{
+    width: 100%;
+    transition: 0.3s;
+}
+.card figcaption{
+    transition: 0.3s;
+}
 footer{
     display: flex;
     flex-direction: column;
@@ -103,4 +153,7 @@ footer .footer-icon{
 }
 .icon {
     width:1.5rem;   
+}
+html{
+    scroll-behavior: smooth;
 }
