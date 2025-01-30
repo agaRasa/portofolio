@@ -182,6 +182,7 @@ li{
 }
 .card img{
     width: 100%;
+    height: 350px;
     transition: 0.3s;
 }
 .card figcaption{
