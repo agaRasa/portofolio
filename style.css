@@ -100,7 +100,8 @@ li{
 }
 .hero-img{
     padding: 6.5rem 5rem 3rem 5rem;
-    width: 50%;}
+    width: 50%;
+}
 .hero-img img{
     height: 75vh;
     border-radius:50%;
@@ -291,6 +292,109 @@ li{
 html{
     scroll-behavior: smooth;
 }
+.menu-icon{
+    font-size: 32px;
+    width: fit-content;
+    display: none;
+}
+@media only screen and (max-width: 768px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+    body{
+        font-size: 15px;
+    }
+    nav ul{
+        display: none;
+    }
+    .header{
+        z-index: 0;
+        position: relative;
+    }
+    .header-content{
+        padding: 0 3rem;
+    }
+    .menu-icon{
+        font-size: 24px;
+        align-items: center;
+        display: flex;
+    }
+    .hero-container{
+        max-width: 100%;
+        padding: 0 3rem;
+        min-height: fit-content;
+    }
+    .hero-text{
+        height: fill-content;
+        padding: 2rem;
+        font-size: 15px;
+    }
+    .hero-img{
+        height: fit-content;
+        padding: 2rem;
+    }
+    .hero-img img{
+        max-width: 100%;
+        width: 30vh;
+        height: 40vh;
+    }
+    .title{
+        font-size: 32px;
+        padding-bottom: 8px;
+        letter-spacing: 2px;
+    }
+    .about-container{
+        min-height: fit-content;
+    }
+    .about-explanation{
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+    .about-me{
+        width: 100%;
+    }
+    .about-me h1{padding-bottom: 4px;}
+    .about-skill{
+        width: 100%;
+        padding: 0;
+    }
+    .project-container{
+        min-height: fit-container;
+        
+    }
+    .wrapper{
+        padding:2rem 1rem;
+    }
+    .card{
+        height: fit-content;
+    }
+    .card img{
+        height: 250px;
+    }
+    .form-container{
+        margin: 1rem;
+        padding: 2rem 4rem;
+    }
+    .form-label{
+        font-size: 1rem;
+    }
+    .form-field{
+        background-color: tomato;
+        margin-top:
+    }
+    .form-input{
+        padding: 1.1rem;
+        font-size: 0.9rem;
+        margin-bottom: 0.9rem
+    }
+    .btn-submit{
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+}
 @media only screen and (max-width: 576px){
     *{
         font-size: 13px;
@@ -370,5 +474,87 @@ html{
         scroll-behavior: smooth;
     }
 }
-@media only screen and (max-width: 768px){
-}
+
+    @media only screen and (max-width: 360px){
+        *{
+            font-size: 11px;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            max-width: 100%;
+        }
+        .header{
+            position: fixed;
+            width: 576px;
+            height: 7vh;
+            font-size: 15px;
+        }
+        .header-content{
+            width: 576px;
+            height: 7vh;
+            display: flex;
+            padding: 0 1.2rem;
+        }
+        .hero-container{
+            width: 576px;
+            min-height: 120px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2px;
+        }
+        .hero-text{
+            width: 60%;
+            height: 100%;
+            padding-top: 5.5rem;
+            padding-right: 2rem;
+        }
+        .hero-img{
+            width: 40%;
+            height: 100%;
+            padding-top: 5rem;
+            padding-left: 1rem;
+        }
+        .hero-img img{
+            height: 20vh;
+        }
+        .about-explanation{
+            display: flex;
+            flex-direction: column;
+        }
+        .description{
+            text-align: justify;
+        }
+        .about-container{
+            min-height: auto;
+        }
+        .about-explanation h1{
+            font-size: 14px;
+        }
+        .about-me, .about-skill{
+            text-align: justify;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        .about-skill{
+            padding-left: 0;
+        }
+        .skill-set{
+            padding: 1rem 0.9rem;
+        }
+        .form-container{
+            margin: 2rem 0;
+        }
+        .btn-submit{
+            padding: 1rem 1rem;
+        }
+        nav ul{
+            display: none;
+        }
+        section{
+            scroll-margin-top: 7vh;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+    }
